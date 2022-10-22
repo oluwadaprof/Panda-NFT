@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
- 
   .logo {
     display: flex;
     justify-content: center;
@@ -49,6 +48,9 @@
     font-weight: 600;
     padding: 12px 16px;
     border: 1px solid #1E50FF;
-
+    background-color: #02050e;
+    &:hover{
+      cursor: pointer;
+    }
   }
 }

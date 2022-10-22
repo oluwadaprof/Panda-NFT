@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  .first__hero {
+    margin-left: 10rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    h1 {
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 80px;
+      color: white;
+      margin-top: 10rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 32px;
+      color: #adb9c7;
+      text-align: left;
+      margin-top: 1rem;
+    }
+    button {
+      width: 176px;
+      height: 56px;
+      padding: 12px 16px;
+      background: #1e50ff;
+      border-radius: 16px;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      margin-left: -36rem;
+      margin-top: 2rem;
+    }
+  }
+}

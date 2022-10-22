@@ -1,0 +1,54 @@
+.navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+//   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+ 
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    img{
+        transform: scale(.9);
+    }
+    p{
+        font-weight: 600;
+        font-size: 1.4rem;
+        margin-left: .4rem;
+        color: white;
+    }
+  }
+  .nav__links{
+    width: 50rem;
+    margin-left: 2rem;
+    justify-content: space-between;
+    .li{
+        list-style: none;
+        text-decoration: none;
+        margin: 1rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: white;
+        &:active{
+            border-bottom: 2px solid #1E50FF ;
+        }
+    }
+  }
+  button{
+    width: 15rem;
+    height: 4.5rem;
+    justify-content: flex-end;
+    margin-left: 9rem;
+    border-radius: 16px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #1E50FF;
+
+  }
+}

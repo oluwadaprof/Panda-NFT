@@ -77,7 +77,16 @@ const Home = () => {
           <Nftcard creatorsImg={owner3} nftImg={nft2} />
           <Nftcard creatorsImg={owner4} nftImg={nft3} />
         </div>
-        <button className="hotnft__btn" >View More</button>
+        <button className="hotnft__btn">View More</button>
+      </section>
+
+      <section  >
+        <div className="community">
+          <h2>Create Your Own NFT!</h2>
+          <p className="community__text" >We have a large scale group to support each other in this game, Join us to get the news as soon <br/>
+          as possible and follow our latest announcements!</p>
+          <button className="community__btn">Join Community Now</button>
+        </div>
       </section>
     </div>
   );

@@ -1,13 +1,14 @@
 import "./nftcard.scss";
-
 import fire from "../../assets/fire.png";
+import { NavLink, Link } from "react-router-dom";
+
 
 
 const Nftcard = ({creatorsImg, nftImg}) => {
   return (
     <div className="card">
       <div className="card__img">
-      <button className="place__bid" >Place Bid</button>
+      <Link to='/productpage' className="place__bid" >Place Bid</Link>
         <img className="img__nft" src={nftImg} alt="" />
         <div className="timer">
           <img className="img__icon" src={fire} alt="" />

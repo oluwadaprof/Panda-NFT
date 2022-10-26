@@ -10,12 +10,12 @@ const Navbar = () => {
         <p>Panda NFT</p>
       </div>
       <div className="nav__links">
-        <NavLink className='li' >Home</NavLink>
-        <NavLink className='li' >Discover</NavLink>
-        <NavLink className='li' >Docs</NavLink>
-        <NavLink className='li' >Blog</NavLink>
-        <NavLink className='li' >About Us</NavLink>
-        <NavLink className='li' >Contact Us</NavLink>
+        <NavLink to='/'  className='li' >Home</NavLink>
+        <NavLink to='discover'  className='li' >Discover</NavLink>
+        <NavLink to='docs'  className='li' >Docs</NavLink>
+        <NavLink to='blog' className='li' >Blog</NavLink>
+        <NavLink to='about'  className='li' >About Us</NavLink>
+        <NavLink to='contact'  className='li' >Contact Us</NavLink>
       </div>
       <button type="">Connect Wallet</button>
     </div>

@@ -3,7 +3,13 @@
   height: 368px;
   background: #272d37;
   border-radius: 2rem;
-  margin: 0rem !important;
+  margin: 0rem ;
+  &:hover{
+    border: 1px solid white;
+    transition: 1s ease-in-out;
+    background: none;
+    cursor: pointer;
+  }
   img {
     margin-top: 4rem;
   }

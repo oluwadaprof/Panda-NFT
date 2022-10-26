@@ -1,4 +1,3 @@
-import Nftcard from "../nftcard/Nftcard";
 import "./hero.scss";
 import halfcard from '../../assets/half card.png'
 import binance from '../../assets/binance.png'
@@ -6,6 +5,7 @@ import coinbase from '../../assets/coinbase.png'
 import metamask from '../../assets/metamask.png'
 import tokyocrypto from '../../assets/tokyocrypto.png'
 import trustwallet from '../../assets/trust wallet.png'
+import herocard from '../../assets/herocard.png'
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
          <button type="">Get Started</button>
       </div>
       <div className="second__hero">
-        <Nftcard/>
+        <img src={herocard} className='halfcard2' alt=""/>
         <img className="halfcard" src={halfcard} alt=""/>
       </div>
       </div>

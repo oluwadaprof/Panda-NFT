@@ -5,14 +5,51 @@
   border-radius: 24px;
   margin-top: 7rem;
   margin-left: -7rem;
+  transform: scaleX(0.9);
   .card__img {
     background: none;
     align-items: center;
     justify-content: center;
+    .place__bid {
+      box-shadow: 8px 8px 18px rgba(30, 80, 255, 0.25);
+      border-radius: 16px;
+      background: #1e50ff;
+      position: absolute;
+      top: 15rem;
+      left: 10rem;
+      height: 5rem;
+      width: 12rem;
+      border: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.2rem;
+      z-index: 6;
+      cursor: pointer;
+      display: none;
+    }
+
+    &:hover .img__nft{
+      filter: blur(1rem);
+      cursor: pointer;
+      z-index: -2;
+    }
+
+    &:hover .place__bid{
+      cursor: pointer;
+      display: block;
+      z-index: 3; 
+    }
+
+    &:hover .timer {
+     z-index: -5;
+    }
+
     .img__nft {
       margin-top: 2rem;
       border-radius: 23px;
       z-index: -9;
+     
+      
     }
     .timer {
       z-index: 999;
@@ -38,6 +75,7 @@
       p {
         background: none;
         font-weight: 600;
+        margin-top: 0.7rem;
         margin-left: 0.7rem;
         margin-bottom: 0.6rem;
         font-size: 1.3rem;
@@ -80,25 +118,24 @@
             display: flex;
             justify-content: space-around;
             gap: 7rem;
-            P{
+            P {
               position: relative;
               top: -1rem;
               left: -1.4rem;
               text-align: left;
-              color: #8F9CA9; 
+              color: #8f9ca9;
             }
           }
-          .text__details{
+          .text__details {
             display: flex;
             justify-content: space-around;
-            P{
+            P {
               position: relative;
-              top: -.2rem;
+              top: -0.2rem;
               left: -1.5rem;
               text-align: left;
               font-size: 1.4rem;
               font-weight: 600;
-              
             }
           }
         }

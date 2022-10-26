@@ -1,13 +1,14 @@
 import "./nftcard.scss";
-import nft1 from "../../assets/nft 1.png";
-import fire from "../../assets/fire.png";
-import owner1 from "../../assets/owner2.png";
 
-const Nftcard = () => {
+import fire from "../../assets/fire.png";
+
+
+const Nftcard = ({creatorsImg, nftImg}) => {
   return (
     <div className="card">
       <div className="card__img">
-        <img className="img__nft" src={nft1} alt="" />
+      <button className="place__bid" >Place Bid</button>
+        <img className="img__nft" src={nftImg} alt="" />
         <div className="timer">
           <img className="img__icon" src={fire} alt="" />
           <p>05 : 12 : 07 : 45</p>
@@ -18,7 +19,7 @@ const Nftcard = () => {
             <button>BSc</button>
           </div>
           <div className="author">
-            <img src={owner1} alt="" />
+            <img src={creatorsImg} alt="" />
             <div className="author__text" >
               <div className="text__headers" >
                 <p>Creator</p>

@@ -8,7 +8,7 @@ const Nftcard = ({creatorsImg, nftImg}) => {
   return (
     <div className="card">
       <div className="card__img">
-      <Link to='/productpage' className="place__bid" >Place Bid</Link>
+        <NavLink to='/productpage' className="place__bid" ><p>Place Bid</p></NavLink>
         <img className="img__nft" src={nftImg} alt="" />
         <div className="timer">
           <img className="img__icon" src={fire} alt="" />

@@ -1,0 +1,41 @@
+.offer__card {
+    display: flex;
+    margin-left: 20rem;
+    margin-top: 3rem;
+    .offer__img {
+      .check {
+        position: relative;
+        left: -1rem;
+        top: 0.4rem;
+      }
+    }
+    .offer__details {
+      .offer__header {
+        // width: 100%;
+        display: flex;
+        justify-content: space-between;
+        P {
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-left: 1rem;
+          span {
+            color: #adb9c7;
+            font-weight: normal;
+            margin-left: 0.5rem;
+            margin-right: 1.3rem;
+          }
+        }
+      }
+    }
+    .offer__bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .5rem;
+      P {
+        font-size: 1.1rem;
+        font-weight: normal;
+        margin-left: 1rem;
+        color: #adb9c7;
+      }
+    }
+  }

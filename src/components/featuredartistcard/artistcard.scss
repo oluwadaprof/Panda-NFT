@@ -4,6 +4,12 @@
   background-color: #272d37;
   margin: auto;
   border-radius: 1.5rem;
+  &:hover{
+    box-shadow: 0 15px 35px rgba(216, 205, 205, 0.5);
+    transform: scale(1.1);
+    transition: 1s ease;
+    cursor: pointer;
+  }
   img{
     margin-top: 1rem;
   }

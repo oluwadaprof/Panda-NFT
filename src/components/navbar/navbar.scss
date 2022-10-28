@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-//   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  //   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
@@ -11,33 +11,39 @@
     justify-content: center;
     align-items: center;
     margin-left: 1rem;
-    img{
-        transform: scale(.9);
+    img {
+      transform: scale(0.9);
     }
-    p{
-        font-weight: 600;
-        font-size: 1.4rem;
-        margin-left: .4rem;
-        color: white;
+    p {
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-left: 0.4rem;
+      color: white;
     }
   }
-  .nav__links{
+  .nav__links {
     width: 50rem;
     margin-left: 2rem;
     justify-content: space-between;
-    .li{
-        list-style: none;
-        text-decoration: none;
-        margin: 1rem;
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: white;
-        &:active{
-            border-bottom: 2px solid #1E50FF ;
-        }
+    .li {
+      list-style: none;
+      text-decoration: none;
+      margin: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: white;
+    }
+    .active {
+      list-style: none;
+      text-decoration: none;
+      margin: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: white;
+      border-bottom: 2px solid #1e50ff;
     }
   }
-  button{
+  button {
     width: 15rem;
     height: 4.5rem;
     justify-content: flex-end;
@@ -47,10 +53,34 @@
     font-size: 1.2rem;
     font-weight: 600;
     padding: 12px 16px;
-    border: 1px solid #1E50FF;
+    border: 1px solid #1e50ff;
     background-color: #02050e;
-    &:hover{
+    &:hover {
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    .logo {
+      position: absolute;
+      top: 3rem;
+      left: -1.8rem;
+      width: 20rem;
+    }
+    .nav__links {
+      position: relative;
+      top: -2rem;
+      left: 34rem;
+      width: 45rem;
+      height: 80rem;
+      background: red;
+
+      .li {
+        display: grid;
+        align-content: center;
+      }
     }
   }
 }

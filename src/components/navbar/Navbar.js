@@ -1,8 +1,11 @@
+import { useState } from "react";
 import "./navbar.scss";
 import panda from "../../assets/Panda logo.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [activeNav, setActiveNav] = useState("home");
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -10,12 +13,48 @@ const Navbar = () => {
         <p>Panda NFT</p>
       </div>
       <div className="nav__links">
-        <NavLink to='/'  className='li' >Home</NavLink>
-        <NavLink to='discover'  className='li' >Discover</NavLink>
-        <NavLink to='docs'  className='li' >Docs</NavLink>
-        <NavLink to='blog' className='li' >Blog</NavLink>
-        <NavLink to='about'  className='li' >About Us</NavLink>
-        <NavLink to='contact'  className='li' >Contact Us</NavLink>
+        <NavLink
+          onClick={() => setActiveNav("home")}
+          to="/"
+          className={activeNav === "home" ? "active" : "li"}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          onClick={() => setActiveNav("discover")}
+          to="discover"
+          className={activeNav === "discover" ? "active" : "li"}
+        >
+          Discover
+        </NavLink>
+        <NavLink
+          onClick={() => setActiveNav("docs")}
+          to="docs"
+          className={activeNav === "docs" ? "active" : "li"}
+        >
+          Docs
+        </NavLink>
+        <NavLink
+          onClick={() => setActiveNav("blog")}
+          to="blog"
+          className={activeNav === "blog" ? "active" : "li"}
+        >
+          Blog
+        </NavLink>
+        <NavLink
+          onClick={() => setActiveNav("about")}
+          to="about"
+          className={activeNav === "about" ? "active" : "li"}
+        >
+          About Us
+        </NavLink>
+        <NavLink
+          onClick={() => setActiveNav("contact")}
+          to="contact"
+          className={activeNav === "contact" ? "active" : "li"}
+        >
+          Contact Us
+        </NavLink>
       </div>
       <button type="">Connect Wallet</button>
     </div>
